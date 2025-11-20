@@ -213,7 +213,7 @@ class NilaiApp:
             writer.writerows(rows)
         messagebox.showinfo('Export CSV', f'Data berhasil diekspor ke {filename}')
 
-        if Name == 'main':
+        if __name__ == 'main':
             init_db()
             root = tk.Tk()
             app = NilaiApp(root)
